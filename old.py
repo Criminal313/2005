@@ -402,7 +402,7 @@ logo ="""
 \033[1;32m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆>>>\033[1;31m»»\033[1;32mMAFIA REYESS✓✓               
 \033[1;97m𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋>>>\033[1;97m»»\033[1;97m+93783361438✓✓
 \033[1;32m𝙂𝙄𝙏𝙃𝙐𝘽>>>>>>>\033[1;31m»»\033[1;31mCrimanl313✓✓
-\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.8✓✓   
+\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.1✓✓   
 \033[1;32m𝙏𝙊𝙊𝙇 𝙎𝙏𝙐𝙏𝘼𝙎>>>>\033[1;31m»»\033[1;32m𝙁𝙍𝙀𝙀✓✓
 \033[1;35m𝙏𝙀𝙍𝙈𝙐𝙓 𝘼𝙇𝙇 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘽𝙔 MAFIA ✓✓
 \033[1;32m««««««««««««««««««««««««««««««««««««««««««««««««"""
@@ -419,9 +419,9 @@ class Main:
 		print(" ~~~~~~~~~~~~~~~~~~")
 		print(" \033[0;93m[1]\033[0;94m Crack with File \033[0;92m   ~[Ok login]")
 		print(" \033[0;93m[2] Crack from Public Id  ~[login]")
-		print(" [3] Cloning Pak Idz")
+		print(" [3] Cloning AFG IDZ")
 		print(" \033[0;94m[4] Cloning Old IDZ 2008-10 \033[0;94m~[Ok login]")
-		print(" [5] Cloning Old Idz 2011-16\033[0;94m ~[Ok login]")
+		print(" [5] Cloning Old IDZ 2011-16\033[0;94m ~[Ok login]")
 		print("\033[0;91m [E] Exit \n")
 		MMSevil =input(" \033[0;93mChoose : ")
 		if MMSevil in ["1", "01"]:
@@ -851,9 +851,9 @@ class Main:
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; dpr=3.7835533618927; wd=712x1308; fr=1KUKdhu1LPnvs79hq.AWUmovuxZqlqswmuuMH8KGIcRgE.BmGsWT..AAA.0.0.BmGsYg.AWXEvJEkelk',
+    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; dpr=3.7835533618927; m_pixel_ratio=3.7835533618927; wd=712x1308; fr=0Bk2jTA8y6fdztcug.AWWu_FLdbrKihicuLloiW9XLPbg.BmGmav..AAA.0.0.BmGsE1.AWWT4ryC9qM',
     'dpr': '2.75',
-    'referer': 'https://www.facebook.com/',
+    'referer': 'https://www.facebook.com/?paipv=0&eav=AfaZfkoThOQw8J8vTLAxO_2nOsEFdB9g48PjVFD-7cZm7Dpcw4Rt7ixm5-JjZBcxeXs&_rdr',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
@@ -1313,9 +1313,9 @@ class Main:
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; dpr=3.7835533618927; wd=712x1308; fr=1KUKdhu1LPnvs79hq.AWUmovuxZqlqswmuuMH8KGIcRgE.BmGsWT..AAA.0.0.BmGsYg.AWXEvJEkelk',
+    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; dpr=3.7835533618927; m_pixel_ratio=3.7835533618927; wd=712x1308; fr=0Bk2jTA8y6fdztcug.AWWu_FLdbrKihicuLloiW9XLPbg.BmGmav..AAA.0.0.BmGsE1.AWWT4ryC9qM',
     'dpr': '2.75',
-    'referer': 'https://www.facebook.com/',
+    'referer': 'https://www.facebook.com/?paipv=0&eav=AfaZfkoThOQw8J8vTLAxO_2nOsEFdB9g48PjVFD-7cZm7Dpcw4Rt7ixm5-JjZBcxeXs&_rdr',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
