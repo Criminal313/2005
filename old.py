@@ -389,12 +389,11 @@ def follow(ses,coki):
  
 logo ="""
 
-\033[91;1m    __  _
-\033[95;1m   |  \/  
-\033[1;97m   | \  / 
-\033[1;92m   | |\/| 
-\033[1;97m       
-\033[1;92m   |_|  |      
+██    ███  █████  ███████ ██  █████      
+████  ████ ██   ██ ██      ██ ██   ██     
+██ ████ ██ ███████ █████   ██ ███████     
+██  ██  ██ ██   ██ ██      ██ ██   ██     
+██      ██ ██   ██ ██      ██ ██   ██     
 \033[1;34mMAFIA\033[1;37m
 \033[1;31m MAFIA REYESS\033[1;37m   
 
@@ -403,7 +402,7 @@ logo ="""
 \033[1;32m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆>>>\033[1;31m»»\033[1;32mMAFIA REYESS✓✓               
 \033[1;97m𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋>>>\033[1;97m»»\033[1;97m+93783361438✓✓
 \033[1;32m𝙂𝙄𝙏𝙃𝙐𝘽>>>>>>>\033[1;31m»»\033[1;31mCrimanl313✓✓
-\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.7✓✓   
+\033[1;31m𝙑𝙄𝙍𝙎𝙊𝙉>>>>>>>\033[1;31m»»\033[1;32m9.8✓✓   
 \033[1;32m𝙏𝙊𝙊𝙇 𝙎𝙏𝙐𝙏𝘼𝙎>>>>\033[1;31m»»\033[1;32m𝙁𝙍𝙀𝙀✓✓
 \033[1;35m𝙏𝙀𝙍𝙈𝙐𝙓 𝘼𝙇𝙇 𝙒𝙊𝙍𝙆𝙄𝙉𝙂 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎 𝘽𝙔 MAFIA ✓✓
 \033[1;32m««««««««««««««««««««««««««««««««««««««««««««««««"""
@@ -848,13 +847,13 @@ class Main:
 			pw = pw.lower()
 			ses = requests.Session()
 			headers = {
-    'authority': 'm.facebook.com',
+    'authority': 'www.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; m_pixel_ratio=3.7835533618927; x-referer=eyJyIjoiL2Jvb2ttYXJrcy8%2FcmVmPTEwNCZwYWlwdj0wJmVhdj1BZmJGY0N6S2VVTnMtMzkwRzhNUDlTTGZwS2tPYnA1VE5WUVNrT1kwZ09rWkFQM2V6ZmxOV3pkM0dRNHQtUDBGZnhZIiwiaCI6Ii9ib29rbWFya3MvP3JlZj0xMDQmcGFpcHY9MCZlYXY9QWZiRmNDektlVU5zLTM5MEc4TVA5U0xmcEtrT2JwNVROVlFTa09ZMGdPa1pBUDNlemZsTld6ZDNHUTR0LVAwRmZ4WSIsInMiOiJtIn0%3D; wd=712x1308',
+    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; dpr=3.7835533618927; wd=712x1308; fr=1KUKdhu1LPnvs79hq.AWUmovuxZqlqswmuuMH8KGIcRgE.BmGsWT..AAA.0.0.BmGsYg.AWXEvJEkelk',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/?ref=104&paipv=0&eav=AfbFcCzKeUNs-390G8MP9SLfpKkObp5TNVQSkOY0gOkZAP3ezflNWzd3GQ4t-P0FfxY',
+    'referer': 'https://www.facebook.com/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
@@ -1310,13 +1309,13 @@ class Main:
 			pw = pw.lower()
 			ses = requests.Session()
 			headers = {
-    'authority': 'm.facebook.com',
+    'authority': 'www.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; m_pixel_ratio=3.7835533618927; x-referer=eyJyIjoiL2Jvb2ttYXJrcy8%2FcmVmPTEwNCZwYWlwdj0wJmVhdj1BZmJGY0N6S2VVTnMtMzkwRzhNUDlTTGZwS2tPYnA1VE5WUVNrT1kwZ09rWkFQM2V6ZmxOV3pkM0dRNHQtUDBGZnhZIiwiaCI6Ii9ib29rbWFya3MvP3JlZj0xMDQmcGFpcHY9MCZlYXY9QWZiRmNDektlVU5zLTM5MEc4TVA5U0xmcEtrT2JwNVROVlFTa09ZMGdPa1pBUDNlemZsTld6ZDNHUTR0LVAwRmZ4WSIsInMiOiJtIn0%3D; wd=712x1308',
+    # 'cookie': 'datr=wIAUZkfNZci5jRYJIygKSgKM; sb=wIAUZkUmq2yI1hEMHk_9KhiX; ps_l=0; ps_n=0; locale=en_US; wl_cbv=v2%3Bclient_version%3A2462%3Btimestamp%3A1712640548; vpd=v1%3B578x314x3.43505597114563; dpr=3.7835533618927; wd=712x1308; fr=1KUKdhu1LPnvs79hq.AWUmovuxZqlqswmuuMH8KGIcRgE.BmGsWT..AAA.0.0.BmGsYg.AWXEvJEkelk',
     'dpr': '2.75',
-    'referer': 'https://m.facebook.com/bookmarks/?ref=104&paipv=0&eav=AfbFcCzKeUNs-390G8MP9SLfpKkObp5TNVQSkOY0gOkZAP3ezflNWzd3GQ4t-P0FfxY',
+    'referer': 'https://www.facebook.com/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
